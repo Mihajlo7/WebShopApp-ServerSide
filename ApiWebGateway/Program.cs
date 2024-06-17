@@ -1,3 +1,7 @@
+
+
+using LoggingConfiguration;
+
 namespace ApiWebGateway
 {
     public class Program
@@ -8,6 +12,12 @@ namespace ApiWebGateway
 
             // Add services to the container.
 
+            // Logging configuration
+
+
+            // builder.Host.UseSerilog(Log.Logger);
+
+            builder.Host.ConfigureCustomLogging();
             builder.Services.AddControllers();
 
             var app = builder.Build();
