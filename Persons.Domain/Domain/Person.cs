@@ -15,6 +15,7 @@ namespace Persons.Domain.Domain
         public int EmailPromotions { get; set; }
         public virtual ICollection<BusinessEntityAdress> Adresses { get; set;}
         public virtual ICollection<Password> Passwords { get; set; }
+        public virtual ICollection<BussinessEntitityCreditCard> CreditCards { get; set; }
         public virtual EmailAddress EmailAddress { get; set; }
     }
 }
