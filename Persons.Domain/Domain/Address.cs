@@ -12,6 +12,10 @@ namespace Persons.Domain.Domain
         public string AddressLine2 { get; set;}
         public string City { get; set; }
         public string PostalCode { get; set; }
+
+        public virtual ICollection<BusinessEntityAdress> Adresses { get; set; }
+
+        public Guid CountryId { get; set; }
         public Country Country { get; set; }
     }
 }

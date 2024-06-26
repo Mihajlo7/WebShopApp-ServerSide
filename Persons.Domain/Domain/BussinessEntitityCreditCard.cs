@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Persons.Domain.Domain
 {
-    public class BussinessEntitityCreditCard
+    public class BussinessEntitityCreditCard: BusinessEntity
     {
+        public Guid PersonId { get; set; }
         public Person Person { get; set; }
+
+        public Guid CreditCardId { get; set; }
         public CreditCard CreditCard { get; set;}
     }
 }

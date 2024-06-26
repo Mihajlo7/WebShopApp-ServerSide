@@ -12,5 +12,8 @@ namespace Persons.Domain.Domain
         public string Number { get; set; }
         public int ExpMonth { get; set; }
         public int ExpYear { get; set; }
+
+        public Guid BussinessEntityCreditCardId { get; set; }
+        public BussinessEntitityCreditCard BussinessEntitityCreditCard { get; set; }
     }
 }

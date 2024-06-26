@@ -10,5 +10,9 @@ namespace Persons.Domain.Domain
     {
         public string PasswordHash { get; set; }
         public string PasswordSalt { get; set; }
+        public bool IsActive { get; set; }
+
+        public Guid PersonId { get; set; }
+        public Person Person { get; set; }
     }
 }

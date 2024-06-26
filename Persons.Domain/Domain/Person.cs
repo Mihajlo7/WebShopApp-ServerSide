@@ -12,7 +12,6 @@ namespace Persons.Domain.Domain
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public string Telephone { get; set; }
-        public int EmailPromotions { get; set; }
         public virtual ICollection<BusinessEntityAdress> Adresses { get; set;}
         public virtual ICollection<Password> Passwords { get; set; }
         public virtual ICollection<BussinessEntitityCreditCard> CreditCards { get; set; }

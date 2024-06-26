@@ -12,5 +12,7 @@ namespace Persons.Domain.Domain
         public string Name { get; set; }
         public string Code { get; set; }
         public string CountryRegionCode { get; set; }
+
+        public virtual ICollection<Address> Address { get; set; }
     }
 }
