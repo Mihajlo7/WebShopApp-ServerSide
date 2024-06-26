@@ -15,7 +15,7 @@ namespace Persons.Domain.Domain
 
         public virtual ICollection<BusinessEntityAdress> Adresses { get; set; }
 
-        public Guid CountryId { get; set; }
-        public Country Country { get; set; }
+        public int? CountryId { get; set; }
+        public Country? Country { get; set; }
     }
 }

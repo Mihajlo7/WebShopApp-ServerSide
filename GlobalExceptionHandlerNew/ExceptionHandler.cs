@@ -43,6 +43,9 @@ namespace GlobalExceptionHandlerNew
             errorResponse.ErrorCode = nameof(exception.ErrorCode);
             errorResponse.StatusCode = exception.StatusCode;
             errorResponse.DetailedMessage = exception.StackTrace;
+            errorResponse.Instance = $"{httpContext.Request.Method} : {httpContext.Request.Path}";
+            errorResponse.Body = httpContext.Request.Body!=null 
+                ? httpContext.Request.Body.ToString():null;
 
             response.StatusCode = errorResponse.StatusCode;
 

@@ -8,8 +8,8 @@ namespace Persons.Domain.Domain
 {
     public class BusinessEntityAdress : BusinessEntity
     {
-        public Guid AddressId { get; set; }
-        public Address Address { get; set; }
+        public Guid? AddressId { get; set; }
+        public Address? Address { get; set; }
 
         public Guid PersonId { get; set; }
         public Person Person { get; set; }

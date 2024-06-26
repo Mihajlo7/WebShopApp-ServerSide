@@ -13,5 +13,7 @@ namespace ExceptionModel
         public string ErrorCode { get; set; }
         public int StatusCode { get; set; }
         public string DetailedMessage { get; set; } 
+        public string Instance {  get; set; }
+        public string Body { get; set; }
     }
 }

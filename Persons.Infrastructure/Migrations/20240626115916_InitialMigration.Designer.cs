@@ -12,7 +12,7 @@ using Persons.Infrastructure;
 namespace Persons.Infrastructure.Migrations
 {
     [DbContext(typeof(PersonsDBContext))]
-    [Migration("20240626075318_InitialMigration")]
+    [Migration("20240626115916_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -43,10 +43,7 @@ namespace Persons.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("CountryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("CountryId1")
+                    b.Property<int>("CountryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
@@ -61,7 +58,7 @@ namespace Persons.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CountryId1");
+                    b.HasIndex("CountryId");
 
                     b.ToTable("Addresses");
                 });
@@ -279,8 +276,8 @@ namespace Persons.Infrastructure.Migrations
                 {
                     b.HasOne("Persons.Domain.Domain.Country", "Country")
                         .WithMany("Address")
-                        .HasForeignKey("CountryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.SetNull)
                         .IsRequired();
 
                     b.Navigation("Country");
@@ -291,7 +288,7 @@ namespace Persons.Infrastructure.Migrations
                     b.HasOne("Persons.Domain.Domain.Address", "Address")
                         .WithMany("Adresses")
                         .HasForeignKey("AddressId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.SetNull)
                         .IsRequired();
 
                     b.HasOne("Persons.Domain.Domain.Person", "Person")
