@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GenericEntity;
 
 namespace Persons.Domain.Domain
 {
-    public class Address : BusinessEntity
+    public class Address : IEntity
     {
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set;}
@@ -15,7 +16,7 @@ namespace Persons.Domain.Domain
 
         public virtual ICollection<BusinessEntityAdress> Adresses { get; set; }
 
-        public int? CountryId { get; set; }
+        public Guid? CountryId { get; set; }
         public Country? Country { get; set; }
     }
 }

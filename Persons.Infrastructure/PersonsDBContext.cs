@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConnectonService;
+using GenericInfrastructure;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Logging;
 using Persons.Domain.Domain;
 using Persons.Infrastructure.Configuration;
@@ -44,5 +46,7 @@ namespace Persons.Infrastructure
             modelBuilder.ApplyConfiguration(new AddressConfiguration());
             modelBuilder.ApplyConfiguration(new PersonConfiguration());
         }
+
+        
     }
 }

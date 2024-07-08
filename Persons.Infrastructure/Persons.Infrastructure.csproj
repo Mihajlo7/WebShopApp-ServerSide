@@ -22,7 +22,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConnectonService\ConnectonService.csproj" />
+    <ProjectReference Include="..\GenericInfrastructure\GenericInfrastructure.csproj" />
     <ProjectReference Include="..\Persons.Domain\Persons.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

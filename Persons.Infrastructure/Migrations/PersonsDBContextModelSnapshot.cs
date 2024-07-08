@@ -40,17 +40,17 @@ namespace Persons.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CountryId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("CountryId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PostalCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -66,16 +66,17 @@ namespace Persons.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AddressId")
+                    b.Property<Guid?>("AddressId")
+                        .IsRequired()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("PersonId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -93,7 +94,7 @@ namespace Persons.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("CreditCardId")
@@ -102,7 +103,7 @@ namespace Persons.Infrastructure.Migrations
                     b.Property<Guid>("PersonId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -117,11 +118,9 @@ namespace Persons.Infrastructure.Migrations
 
             modelBuilder.Entity("Persons.Domain.Domain.Country", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Code")
                         .IsRequired()
@@ -131,9 +130,15 @@ namespace Persons.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -149,7 +154,7 @@ namespace Persons.Infrastructure.Migrations
                     b.Property<Guid>("BussinessEntityCreditCardId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("ExpMonth")
@@ -166,7 +171,7 @@ namespace Persons.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -180,7 +185,7 @@ namespace Persons.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -193,7 +198,7 @@ namespace Persons.Infrastructure.Migrations
                     b.Property<Guid>("PersonId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -210,7 +215,7 @@ namespace Persons.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsActive")
@@ -227,7 +232,7 @@ namespace Persons.Infrastructure.Migrations
                     b.Property<Guid>("PersonId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -246,7 +251,7 @@ namespace Persons.Infrastructure.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FirstName")
@@ -261,7 +266,7 @@ namespace Persons.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -274,8 +279,7 @@ namespace Persons.Infrastructure.Migrations
                     b.HasOne("Persons.Domain.Domain.Country", "Country")
                         .WithMany("Address")
                         .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Country");
                 });

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GenericEntity;
 
 namespace Persons.Domain.Domain
 {
-    public class BusinessEntityAdress : BusinessEntity
+    public class BusinessEntityAdress : IEntity
     {
         public Guid? AddressId { get; set; }
         public Address? Address { get; set; }

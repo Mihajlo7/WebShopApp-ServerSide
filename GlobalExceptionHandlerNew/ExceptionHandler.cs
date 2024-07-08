@@ -29,6 +29,7 @@ namespace GlobalExceptionHandlerNew
             }catch(BaseException ex)
             {
                 _logger.LogInformation($"Exception has thrown: {ex}");
+                await HandleExceptionAsync(httpContext, ex);
             }
         }
         private async Task HandleExceptionAsync(HttpContext httpContext,BaseException exception)
