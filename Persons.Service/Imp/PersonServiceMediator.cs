@@ -22,5 +22,10 @@ namespace Persons.Service.Imp
             var response = await _mediator.Send(new GetCountriesWthoutAddressQuery());
             return response;
         }
+
+        public Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

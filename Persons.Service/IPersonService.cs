@@ -9,6 +9,7 @@ namespace Persons.Service
 {
     public interface IPersonService
     {
-       public Task<IEnumerable<CountryWithoutAddressDTO>> GetAllCountries();
+        public Task<IEnumerable<CountryWithoutAddressDTO>> GetAllCountries();
+        public Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson);
     }
 }

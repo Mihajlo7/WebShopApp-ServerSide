@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using GenericInfrastructure;
+using GenericMediator;
 using MediatR;
 using Persons.Core.Dto;
 using Persons.Core.Mapper;
@@ -14,7 +15,7 @@ using Persons.Service.Mediator.Queries;
 
 namespace Persons.Service.Mediator.Handlers
 {
-    public class GetCountriesWithoutAddress : IRequestHandler<GetCountriesWthoutAddressQuery,IEnumerable<CountryWithoutAddressDTO>>
+    public class GetCountriesWithoutAddress : IQueryHandler<GetCountriesWthoutAddressQuery,IEnumerable<CountryWithoutAddressDTO>>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork<PersonsDBContext> _unitOfWork;
