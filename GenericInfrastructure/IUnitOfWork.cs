@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GenericInfrastructure
 {
-    public interface IUnitOfWork : IDisposable 
+    public interface IUnitOfWork<TContext> : IDisposable where TContext : DbContext
     {
         Task<int> CommitChanges();
         IRepository<TEntity> GetRepository<TEntity>() where TEntity: IEntity;

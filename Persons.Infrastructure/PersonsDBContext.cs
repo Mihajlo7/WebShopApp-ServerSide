@@ -25,9 +25,9 @@ namespace Persons.Infrastructure
         public DbSet<EmailAddress> EmailAddresses { get; set; }
         public DbSet<Password> Passwords { get; set; }
 
-        private readonly ConnectionServiceImp _connectionService;
+        private readonly ConnectionService _connectionService;
 
-        public PersonsDBContext(ConnectionServiceImp connectionService)
+        public PersonsDBContext(ConnectionService connectionService)
         {
             _connectionService = connectionService;
         }

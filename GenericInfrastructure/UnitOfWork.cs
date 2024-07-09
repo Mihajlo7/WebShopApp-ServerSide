@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GenericInfrastructure
 {
-    public class UnitOfWork<TContext> : IUnitOfWork where TContext : DbContext
+    public class UnitOfWork<TContext> : IUnitOfWork<TContext> where TContext : DbContext
     {
         private readonly TContext _context;
         private readonly Dictionary<Type, object> _repositories = new();
@@ -25,7 +25,7 @@ namespace GenericInfrastructure
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context.Dispose();
         }
 
         public IRepository<TEntity> GetRepository<TEntity>() where TEntity : IEntity
@@ -34,9 +34,9 @@ namespace GenericInfrastructure
 
             if(!_repositories.ContainsKey(type)) 
             {
-                var repositoryType = typeof(EFGenericRepository<TContext, TEntity>);
-                var repositoryInstance= Activator.CreateInstance(repositoryType);
-                _repositories.Add(type, repositoryInstance);
+                var repository=new EFGenericRepository<TContext,TEntity>(_context);
+                _repositories.Add(type, repository);
+                return repository;
             }
 
             return (IRepository < TEntity >) _repositories[type];

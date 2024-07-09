@@ -7,14 +7,14 @@ using Microsoft.Extensions.Configuration;
 
 namespace ConnectonService
 {
-    public class ConnectionServiceImp
+    public class ConnectionService
     {
         private readonly IConfiguration _configuration;
 
         private string personsDatabase;
         private string productsDatabase;
 
-        public ConnectionServiceImp(IConfiguration configuration)
+        public ConnectionService(IConfiguration configuration)
         {
             _configuration = configuration;
         }

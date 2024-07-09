@@ -1,5 +1,9 @@
 ﻿using ConnectonService;
+using GenericInfrastructure;
 using Microsoft.Identity.Client;
+using Persons.Infrastructure;
+using Persons.Service;
+using Persons.Service.Imp;
 
 namespace WebShopApi.Extensions
 {
@@ -15,7 +19,10 @@ namespace WebShopApi.Extensions
         }
         public static void ConfigConnectionService(this IServiceCollection services)
         {
-            services.AddSingleton<ConnectionServiceImp>();
+            services.AddSingleton<ConnectionService>();
         }
+        
+
+        
     }
 }

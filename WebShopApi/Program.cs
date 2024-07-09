@@ -1,3 +1,4 @@
+using Persons.Service;
 using WebShopApi.Extensions;
 namespace WebShopApi
 {
@@ -15,7 +16,8 @@ namespace WebShopApi
             builder.Services.AddSwaggerGen();
 
             builder.Host.ConfigDatabaseConnection();
-
+            builder.Services.AddMediatorPersons();
+            builder.Services.AddDIPersons();
             builder.Services.ConfigConnectionService();
             var app = builder.Build();
 
