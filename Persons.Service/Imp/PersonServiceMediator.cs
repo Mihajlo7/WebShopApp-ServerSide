@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 using Persons.Core.Dto;
+using Persons.Service.Mediator.Commands;
 using Persons.Service.Mediator.Queries;
 
 namespace Persons.Service.Imp
@@ -23,9 +24,10 @@ namespace Persons.Service.Imp
             return response;
         }
 
-        public Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson)
+        public async Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson)
         {
-            throw new NotImplementedException();
+            var response = await _mediator.Send(new RegisterPersonCommand(registerPerson));
+            return response;
         }
     }
 }

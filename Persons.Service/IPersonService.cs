@@ -11,5 +11,6 @@ namespace Persons.Service
     {
         public Task<IEnumerable<CountryWithoutAddressDTO>> GetAllCountries();
         public Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson);
+        
     }
 }

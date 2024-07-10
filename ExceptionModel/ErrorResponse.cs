@@ -15,5 +15,7 @@ namespace ExceptionModel
         public string DetailedMessage { get; set; } 
         public string Instance {  get; set; }
         public string Body { get; set; }
+
+        public IReadOnlyDictionary<string, string[]> Errors { get; set; }
     }
 }

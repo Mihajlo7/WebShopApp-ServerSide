@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Persons.Core.Dto;
 using Persons.Service;
 
 namespace WebShopApi.Controllers
@@ -18,6 +19,12 @@ namespace WebShopApi.Controllers
         public async Task<IActionResult> GetAllCountries()
         {
             return Ok(await _personService.GetAllCountries());
+        }
+
+        [HttpPost ("/register")]
+        public async Task<IActionResult> RegisterPerson([FromBody] RegisterPersonDTO personDTO)
+        {
+            return Ok(await _personService.Register(personDTO));
         }
     }
 }

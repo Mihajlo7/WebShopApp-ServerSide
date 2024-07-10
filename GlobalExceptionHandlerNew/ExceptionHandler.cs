@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -16,9 +17,9 @@ using Microsoft.Extensions.Logging;
 
 namespace GlobalExceptionHandlerNew
 {
-    public class ExceptionHandler(RequestDelegate next,ILogger logger)
+    public class ExceptionHandler(RequestDelegate next)
     { 
-        private readonly ILogger _logger=logger;
+        //private readonly ILogger _logger=logger;
         private readonly RequestDelegate _next=next;
 
         public async Task InvokeAsync(HttpContext httpContext)
@@ -26,35 +27,70 @@ namespace GlobalExceptionHandlerNew
             try
             {
                 await _next(httpContext);
-            }catch(BaseException ex)
+            }catch(Exception ex)
             {
-                _logger.LogInformation($"Exception has thrown: {ex}");
+                //_logger.LogInformation($"Exception has thrown: {ex}");
                 await HandleExceptionAsync(httpContext, ex);
             }
         }
-        private async Task HandleExceptionAsync(HttpContext httpContext,BaseException exception)
+        private async Task HandleExceptionAsync(HttpContext httpContext,Exception exception)
         {
             httpContext.Response.ContentType = "application/json";
 
             var response=httpContext.Response;
             var errorResponse = new ErrorResponse();
-
-            errorResponse.Title = exception.Title;
-            errorResponse.Message=exception.ErrorCode;
-            errorResponse.ErrorCode = nameof(exception.ErrorCode);
-            errorResponse.StatusCode = exception.StatusCode;
-            errorResponse.DetailedMessage = exception.StackTrace;
+            errorResponse.Message = exception.Message;
+            if(exception is ValidationException validationException)
+            {
+                errorResponse.Title = "Validation Exception";
+                errorResponse.StatusCode = StatusCodes.Status422UnprocessableEntity;
+                errorResponse.ErrorCode = "VAL-00X1";
+                errorResponse.Message = "One or more validation errors occurred";
+                errorResponse.Errors = (IReadOnlyDictionary<string, string[]>)validationException.Data;
+            }else if (exception is BaseException baseException)
+            {
+               errorResponse.Title = baseException.Title;
+            errorResponse.Message=baseException.ErrorCode;
+            errorResponse.ErrorCode = nameof(baseException.ErrorCode);
+            errorResponse.StatusCode = baseException.StatusCode;
+            errorResponse.DetailedMessage = baseException.StackTrace;
             errorResponse.Instance = $"{httpContext.Request.Method} : {httpContext.Request.Path}";
             errorResponse.Body = httpContext.Request.Body!=null 
                 ? httpContext.Request.Body.ToString():null;
 
+            }
+            else
+            {
+                errorResponse.Title = "Server Exception";
+                errorResponse.StatusCode = StatusCodes.Status500InternalServerError;
+                errorResponse.ErrorCode = "SERVER_00X0";
+                errorResponse.Message = exception.Message;
+                errorResponse.DetailedMessage = exception.InnerException.Message;
+                errorResponse.Instance = $"{httpContext.Request.Method} : {httpContext.Request.Path}";
+                errorResponse.Body = httpContext.Request.Body != null
+                    ? await ReadRequestBodyAsync(httpContext) : null;
+            }
+            
+
             response.StatusCode = errorResponse.StatusCode;
 
-            _logger.LogError(exception,errorResponse.Title, errorResponse.Message);
+            //_logger.LogError(exception,errorResponse.Title, errorResponse.Message);
             var excResult=JsonSerializer.Serialize(errorResponse);
 
             await httpContext.Response.WriteAsync(excResult);
 
+        }
+
+        private async Task<string> ReadRequestBodyAsync(HttpContext httpContext)
+        {
+            httpContext.Request.EnableBuffering();
+            httpContext.Request.Body.Position = 0;
+            using (var reader = new StreamReader(httpContext.Request.Body, Encoding.UTF8, detectEncodingFromByteOrderMarks: false, leaveOpen: true))
+            {
+                var body = await reader.ReadToEndAsync();
+                httpContext.Request.Body.Position = 0; // Resetovanje pozicije stream-a za sledeću upotrebu
+                return body;
+            }
         }
     }
 }
