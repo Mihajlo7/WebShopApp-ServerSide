@@ -8,7 +8,7 @@ using GenericMediator;
 using Helpers;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.IdentityModel.Tokens;
-using Persons.Core.Dto;
+using Persons.Core.Dto.Registration.Response;
 using Persons.Domain.Domain;
 using Persons.Infrastructure;
 using Persons.Service.Mediator.Commands;

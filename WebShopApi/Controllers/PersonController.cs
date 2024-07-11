@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Persons.Core.Dto;
+using Persons.Core.Dto.Registration.Request;
 using Persons.Service;
 
 namespace WebShopApi.Controllers

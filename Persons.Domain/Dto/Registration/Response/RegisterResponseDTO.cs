@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persons.Core.Dto
+namespace Persons.Core.Dto.Registration.Response
 {
     public class RegisterResponseDTO
     {

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GenericMediator;
-using Persons.Core.Dto;
+using Persons.Core.Dto.Registration.Request;
+using Persons.Core.Dto.Registration.Response;
 
 namespace Persons.Service.Mediator.Commands
 {

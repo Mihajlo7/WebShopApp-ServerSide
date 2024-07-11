@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 using Persons.Core.Dto;
+using Persons.Core.Dto.Registration.Request;
+using Persons.Core.Dto.Registration.Response;
 using Persons.Service.Mediator.Commands;
 using Persons.Service.Mediator.Queries;
 
