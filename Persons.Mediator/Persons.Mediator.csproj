@@ -6,15 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  
-
-  
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GenericMediator\GenericMediator.csproj" />
     <ProjectReference Include="..\Helpers\Helpers.csproj" />
     <ProjectReference Include="..\Persons.Infrastructure\Persons.Infrastructure.csproj" />
-    <ProjectReference Include="..\Persons.Mediator\Persons.Mediator.csproj" />
     <ProjectReference Include="..\Persons.Validators\Persons.Validators.csproj" />
   </ItemGroup>
 

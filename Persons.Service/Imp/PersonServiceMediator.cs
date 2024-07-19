@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentValidation;
 using MediatR;
 using Persons.Core.Dto;
 using Persons.Core.Dto.Registration.Request;
 using Persons.Core.Dto.Registration.Response;
-using Persons.Service.Mediator.Commands;
-using Persons.Service.Mediator.Queries;
+using Persons.Mediator.Commands;
+using Persons.Mediator.Queries;
+
 
 namespace Persons.Service.Imp
 {
     public class PersonServiceMediator : IPersonService
     {
         private readonly IMediator _mediator;
+        //private readonly IValidator<RegisterPersonDTO> _validator;
 
         public PersonServiceMediator(IMediator mediator)
         {

@@ -14,7 +14,7 @@ namespace Persons.Validators.Validators
         {
             RuleFor(creditCard=>creditCard.Number)
                 .NotEmpty()
-                .Matches(@"[1-5][0-9]{14}")
+                .Matches(@"^\d{4}-\d{4}-\d{4}-\d{4}$")
                 .WithMessage("Invalid credit card");
 
             RuleFor(creditCard => creditCard.ExpMonth)

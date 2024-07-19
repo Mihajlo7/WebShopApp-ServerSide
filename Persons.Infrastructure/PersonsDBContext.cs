@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using ConnectonService;
+using GenericEntity;
 using GenericInfrastructure;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -42,9 +44,11 @@ namespace Persons.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new CountryConfiguration());
-            modelBuilder.ApplyConfiguration(new AddressConfiguration());
-            modelBuilder.ApplyConfiguration(new PersonConfiguration());
+            //modelBuilder.ApplyConfiguration(new CountryConfiguration());
+            //modelBuilder.ApplyConfiguration(new AddressConfiguration());
+            //modelBuilder.ApplyConfiguration(new PersonConfiguration());
+
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
         }
 
         

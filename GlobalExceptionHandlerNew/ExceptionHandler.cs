@@ -65,7 +65,7 @@ namespace GlobalExceptionHandlerNew
                 errorResponse.StatusCode = StatusCodes.Status500InternalServerError;
                 errorResponse.ErrorCode = "SERVER_00X0";
                 errorResponse.Message = exception.Message;
-                errorResponse.DetailedMessage = exception.InnerException.Message;
+                errorResponse.DetailedMessage = exception.Message;
                 errorResponse.Instance = $"{httpContext.Request.Method} : {httpContext.Request.Path}";
                 errorResponse.Body = httpContext.Request.Body != null
                     ? await ReadRequestBodyAsync(httpContext) : null;

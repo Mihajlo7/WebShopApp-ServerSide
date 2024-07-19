@@ -7,7 +7,7 @@ using GenericMediator;
 using Persons.Core.Dto.Registration.Request;
 using Persons.Core.Dto.Registration.Response;
 
-namespace Persons.Service.Mediator.Commands
+namespace Persons.Mediator.Commands
 {
     public sealed record RegisterPersonCommand(RegisterPersonDTO registerPerson) : ICommand<RegisterResponseDTO>;
     

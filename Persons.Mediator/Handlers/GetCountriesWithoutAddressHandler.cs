@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 using AutoMapper;
 using GenericInfrastructure;
 using GenericMediator;
-using MediatR;
 using Persons.Core.Dto;
 using Persons.Core.Mapper;
 using Persons.Domain.Domain;
 using Persons.Infrastructure;
-using Persons.Service.Mediator.Queries;
+using Persons.Mediator.Queries;
 
-namespace Persons.Service.Mediator.Handlers
+namespace Persons.Mediator.Handlers
 {
-    public class GetCountriesWithoutAddress : IQueryHandler<GetCountriesWthoutAddressQuery,IEnumerable<CountryWithoutAddressDTO>>
+    public class GetCountriesWithoutAddressHandler : IQueryHandler<GetCountriesWthoutAddressQuery, IEnumerable<CountryWithoutAddressDTO>>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork<PersonsDBContext> _unitOfWork;
 
-        public GetCountriesWithoutAddress(IUnitOfWork<PersonsDBContext> unitOfWork)
+        public GetCountriesWithoutAddressHandler(IUnitOfWork<PersonsDBContext> unitOfWork)
         {
             var config = new MapperConfiguration(cfg =>
             {

@@ -17,9 +17,7 @@ namespace WebShopApi
             builder.Services.AddSwaggerGen();
 
             builder.Host.ConfigDatabaseConnection();
-            builder.Services.AddMediatorPersons();
             builder.Services.AddDIPersons();
-            builder.Services.AddValidatorsPersons();
             builder.Services.ConfigConnectionService();
             var app = builder.Build();
 

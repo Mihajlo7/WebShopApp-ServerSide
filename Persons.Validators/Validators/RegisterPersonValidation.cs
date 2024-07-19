@@ -26,7 +26,7 @@ namespace Persons.Validators.Validators
 
             RuleFor(person => person.Telephone)
                 .NotEmpty()
-                .Matches(@"^\d{10}$")
+                .Matches(@"^\d{12}$")
                 .WithMessage("Invalid telephone format");
 
             RuleFor(person => person.EmailAddress)
