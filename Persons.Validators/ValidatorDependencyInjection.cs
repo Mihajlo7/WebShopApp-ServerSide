@@ -13,6 +13,7 @@ namespace Persons.Validators
             services.AddValidatorsFromAssemblyContaining<CreditCardValidator>();
             services.AddValidatorsFromAssemblyContaining<EmailAddressValidation>();
             services.AddValidatorsFromAssemblyContaining<RegisterPersonValidation>();
+            services.AddValidatorsFromAssemblyContaining<LoginPersonValidation>();
 
             return services;
         }

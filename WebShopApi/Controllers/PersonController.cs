@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Persons.Core.Dto.Login;
 using Persons.Core.Dto.Registration.Request;
 using Persons.Service;
 
@@ -25,6 +26,11 @@ namespace WebShopApi.Controllers
         public async Task<IActionResult> RegisterPerson([FromBody] RegisterPersonDTO personDTO)
         {
             return Ok(await _personService.Register(personDTO));
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginPerson([FromBody] LoginPersonDTO loginPersonDTO)
+        {
+            return Ok(await _personService.Login(loginPersonDTO));
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FluentValidation;
 using MediatR;
 using Persons.Core.Dto;
+using Persons.Core.Dto.Login;
 using Persons.Core.Dto.Registration.Request;
 using Persons.Core.Dto.Registration.Response;
 using Persons.Mediator.Commands;
@@ -27,6 +28,11 @@ namespace Persons.Service.Imp
         {
             var response = await _mediator.Send(new GetCountriesWthoutAddressQuery());
             return response;
+        }
+
+        public async Task<LoginResponseDTO> Login(LoginPersonDTO loginPerson)
+        {
+            return await _mediator.Send(new LoginPersonCommand(loginPerson));
         }
 
         public async Task<RegisterResponseDTO> Register(RegisterPersonDTO registerPerson)

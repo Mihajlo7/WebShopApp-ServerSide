@@ -22,7 +22,7 @@ namespace Persons.Service
 
         public static IServiceCollection AddDIPersons(this IServiceCollection services) 
         {
-            services.AddSingleton<PersonsDBContext>();
+            services.AddScoped<PersonsDBContext>();
             services.AddScoped<IUnitOfWork<PersonsDBContext>, UnitOfWork<PersonsDBContext>>();
             services.AddScoped<IPersonService, PersonServiceMediator>();
 
