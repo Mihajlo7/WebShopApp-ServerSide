@@ -141,7 +141,7 @@ namespace Persons.Mediator.Handlers
                 new Password 
                 {
                     PasswordHash = hash,
-                    PasswordSalt= Convert.ToHexString(salt),
+                    PasswordSalt= Convert.ToBase64String(salt),
                     IsActive=true,
                     CreatedAt= DateTime.Now,
                     UpdatedAt= DateTime.Now,

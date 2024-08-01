@@ -147,345 +147,345 @@ namespace Persons.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("860fadc9-11eb-46b9-a7a6-6a05a1392532"),
+                            Id = new Guid("771e40ed-a8ba-40b1-80d0-2d33c0637664"),
                             Code = "DE",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8828),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(743),
                             Name = "Germany",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8832)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(747)
                         },
                         new
                         {
-                            Id = new Guid("b09b8094-d3b5-42a9-b5f1-876d72b144de"),
+                            Id = new Guid("f9cbe5e8-1e68-46d9-a920-d3b79b354e40"),
                             Code = "FR",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8836),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(751),
                             Name = "France",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8837)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(752)
                         },
                         new
                         {
-                            Id = new Guid("2355ba89-9338-4060-aba0-0b85de5e13af"),
+                            Id = new Guid("cb854fe4-23ed-41f6-8579-46cd40be8aed"),
                             Code = "IT",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8840),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(754),
                             Name = "Italy",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8840)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(755)
                         },
                         new
                         {
-                            Id = new Guid("0245f0a5-3c9c-4dc3-ae5e-411aa9231861"),
+                            Id = new Guid("c30e50c9-d6ab-47c1-87bb-5636debba263"),
                             Code = "ES",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8842),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(757),
                             Name = "Spain",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8843)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(757)
                         },
                         new
                         {
-                            Id = new Guid("2e84c99d-8eef-4eb8-934b-b2073c35838b"),
+                            Id = new Guid("051c10f8-982b-4bcf-b27e-9d05d03db726"),
                             Code = "PT",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8855),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(759),
                             Name = "Portugal",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8856)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(759)
                         },
                         new
                         {
-                            Id = new Guid("f4506af9-da77-4fd9-92be-542311cefbb4"),
+                            Id = new Guid("a04ea6e9-d4a0-42f1-9c0e-96c5f374c15b"),
                             Code = "NL",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8858),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(761),
                             Name = "Netherlands",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8859)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(761)
                         },
                         new
                         {
-                            Id = new Guid("d0d1edfc-e09a-4d1e-87c6-a9c214fc26bf"),
+                            Id = new Guid("ec4169e2-4a22-4efe-aebe-d962451fb826"),
                             Code = "BE",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8861),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(763),
                             Name = "Belgium",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8861)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(763)
                         },
                         new
                         {
-                            Id = new Guid("dcca438e-156e-4152-b8b6-89be6174c58b"),
+                            Id = new Guid("0cbc9195-9aa7-48d0-b357-20678d668f6a"),
                             Code = "LU",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8863),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(776),
                             Name = "Luxembourg",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8864)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(777)
                         },
                         new
                         {
-                            Id = new Guid("869d9276-370d-4e26-a370-fd219f9fdd5e"),
+                            Id = new Guid("4e545cc7-f094-4f48-8140-157fddd54fb3"),
                             Code = "AT",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8866),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(778),
                             Name = "Austria",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8867)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(779)
                         },
                         new
                         {
-                            Id = new Guid("6dea4d3b-557a-4dc5-adeb-496ae03ce744"),
+                            Id = new Guid("a573a06a-d02d-4a1d-812a-d581cc173834"),
                             Code = "CH",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8870),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(780),
                             Name = "Switzerland",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8870)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(781)
                         },
                         new
                         {
-                            Id = new Guid("0731548a-3f90-4aaf-a1bc-57874f3ea69e"),
+                            Id = new Guid("cbf5806c-5b60-49ce-8556-1f62ba6eaff3"),
                             Code = "PL",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8872),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(782),
                             Name = "Poland",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8873)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(783)
                         },
                         new
                         {
-                            Id = new Guid("8b1ef79c-ab8d-41d2-8c25-fb356d00bbcb"),
+                            Id = new Guid("2b94fc8c-acd1-46b4-9cfb-06bd97194009"),
                             Code = "CZ",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8875),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(785),
                             Name = "Czech Republic",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8875)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(786)
                         },
                         new
                         {
-                            Id = new Guid("a3bb9b89-961e-4e31-a0a3-bd1fc4b6af13"),
+                            Id = new Guid("41c32295-5990-4a6e-8465-18a3238e5ed0"),
                             Code = "HU",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8880),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(787),
                             Name = "Hungary",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8881)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(788)
                         },
                         new
                         {
-                            Id = new Guid("7ec56ad0-95a4-4915-80bf-33a161c0d9a8"),
+                            Id = new Guid("3044bf4b-8976-44dc-b438-7cfed22b4d88"),
                             Code = "SK",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8883),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(789),
                             Name = "Slovakia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8883)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(790)
                         },
                         new
                         {
-                            Id = new Guid("70f1f750-f80a-48ec-99ab-856cf48b8ff3"),
+                            Id = new Guid("b7bba672-d731-48e5-8e91-772e63f2a646"),
                             Code = "SI",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8885),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(791),
                             Name = "Slovenia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8886)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(792)
                         },
                         new
                         {
-                            Id = new Guid("1d9a9a08-49df-4b2c-ac92-28e9ac899345"),
+                            Id = new Guid("edf0f16f-1f72-42fc-acc0-256eb0203ddf"),
                             Code = "HR",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8888),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(796),
                             Name = "Croatia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8888)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(796)
                         },
                         new
                         {
-                            Id = new Guid("646472bd-4ddb-4d43-a6ee-2e1ffaad7c39"),
+                            Id = new Guid("605fea65-efb3-4599-9c56-9d73aa2c7002"),
                             Code = "RS",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8890),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(798),
                             Name = "Serbia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8891)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(798)
                         },
                         new
                         {
-                            Id = new Guid("0a1c8607-6c62-46fc-af41-0ce343efa869"),
+                            Id = new Guid("ab5c637e-b487-40a1-8d97-87c6be6f9c59"),
                             Code = "BA",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8892),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(801),
                             Name = "Bosnia and Herzegovina",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8893)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(801)
                         },
                         new
                         {
-                            Id = new Guid("b494a40f-5be9-4aff-a313-ca9ef84e5892"),
+                            Id = new Guid("ddfba93c-29ad-43d7-9896-5bc89b18f59c"),
                             Code = "ME",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8895),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(802),
                             Name = "Montenegro",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8895)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(803)
                         },
                         new
                         {
-                            Id = new Guid("27a8534c-8621-4dfe-af57-e8ac879968ff"),
+                            Id = new Guid("4dda6f5d-91dd-41b3-8e99-ffc176ceb592"),
                             Code = "XK",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8897),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(805),
                             Name = "Kosovo",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8897)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(806)
                         },
                         new
                         {
-                            Id = new Guid("64564d2f-e19c-43ed-8fb8-34f8ac487f3b"),
+                            Id = new Guid("b9b2a233-bd53-4888-a4c2-bffd6b8fbb20"),
                             Code = "MK",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8901),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(808),
                             Name = "North Macedonia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8902)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(808)
                         },
                         new
                         {
-                            Id = new Guid("0030d580-b35c-419b-9c5f-97e4d7fb7c15"),
+                            Id = new Guid("56b971be-6365-4675-96ec-2d8581e8634a"),
                             Code = "AL",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8904),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(809),
                             Name = "Albania",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8904)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(811)
                         },
                         new
                         {
-                            Id = new Guid("2794bdcd-e04e-400b-99d0-57d79287f6c1"),
+                            Id = new Guid("7fddc8dc-39bf-488c-9e7c-56803fa8fb34"),
                             Code = "GR",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8906),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(814),
                             Name = "Greece",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8907)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(815)
                         },
                         new
                         {
-                            Id = new Guid("f47602a3-74a9-4791-8a6b-5963aad87014"),
+                            Id = new Guid("e26976ed-cc3a-41f9-bde8-962a65e2ac85"),
                             Code = "BG",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8909),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(818),
                             Name = "Bulgaria",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8910)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(819)
                         },
                         new
                         {
-                            Id = new Guid("65f67b00-4ba8-4f81-86c9-36efe2f6e793"),
+                            Id = new Guid("147110fc-1555-4a89-9464-28d842251dae"),
                             Code = "RO",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8912),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(830),
                             Name = "Romania",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8912)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(830)
                         },
                         new
                         {
-                            Id = new Guid("1f979e39-06a9-4ceb-9287-4e02d787e671"),
+                            Id = new Guid("adf21309-65f4-43a8-972b-0e3423a70b25"),
                             Code = "TR",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8914),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(869),
                             Name = "Turkey",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8915)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(869)
                         },
                         new
                         {
-                            Id = new Guid("8fdf6c95-2975-48b2-aa2f-4a9208a5098d"),
+                            Id = new Guid("f7208b1d-bc46-4cd5-aa18-c6906fdf29c2"),
                             Code = "UA",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8917),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(871),
                             Name = "Ukraine",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8917)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(872)
                         },
                         new
                         {
-                            Id = new Guid("28336fcd-ed72-4476-b63d-d0e3abbe40c0"),
+                            Id = new Guid("58853c1a-8339-45ec-bf8c-01430ca0389d"),
                             Code = "BY",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8919),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(874),
                             Name = "Belarus",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8920)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(874)
                         },
                         new
                         {
-                            Id = new Guid("bcb208e1-0ede-4e0f-a30f-37139e0d0e35"),
+                            Id = new Guid("24055fdd-b991-4a52-81f5-ab1d5fb16b6b"),
                             Code = "LT",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8923),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(877),
                             Name = "Lithuania",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8924)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(877)
                         },
                         new
                         {
-                            Id = new Guid("dafc5e99-cb59-4f24-9309-93b92c2b167a"),
+                            Id = new Guid("47451089-23ba-4754-9f55-40ed919c9a9a"),
                             Code = "LV",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8926),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(879),
                             Name = "Latvia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8926)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(879)
                         },
                         new
                         {
-                            Id = new Guid("0c4985c4-fd13-40e8-8aeb-681dc30a33d9"),
+                            Id = new Guid("7c086eb6-ac0c-47f8-8a24-1bc91569679b"),
                             Code = "EE",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8928),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(905),
                             Name = "Estonia",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8929)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(905)
                         },
                         new
                         {
-                            Id = new Guid("27e077a7-59b8-4529-93c5-c6a248096503"),
+                            Id = new Guid("8cad0ee9-2ce3-4ca2-aecd-a621323dc1eb"),
                             Code = "FI",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8930),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(910),
                             Name = "Finland",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8931)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(911)
                         },
                         new
                         {
-                            Id = new Guid("1219c431-9a2f-4010-9628-d8dca8efdfa0"),
+                            Id = new Guid("8e31d22a-daed-4de0-8ced-4a802b00189f"),
                             Code = "SE",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8933),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(914),
                             Name = "Sweden",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8933)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(915)
                         },
                         new
                         {
-                            Id = new Guid("8f0ab2d0-f103-4a6e-aa73-e8194570cfb2"),
+                            Id = new Guid("7d696bef-dba0-47bb-b777-12f60ab669ca"),
                             Code = "NO",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8935),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(917),
                             Name = "Norway",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8935)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(918)
                         },
                         new
                         {
-                            Id = new Guid("f91ae38e-6260-406c-932f-b09bc40877c3"),
+                            Id = new Guid("4d420b60-8c89-488a-ac88-16a58767a545"),
                             Code = "DK",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8937),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(920),
                             Name = "Denmark",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8938)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(921)
                         },
                         new
                         {
-                            Id = new Guid("0deca6d8-0838-4485-b964-b9a47b1945b9"),
+                            Id = new Guid("440aaa19-e9ce-46b3-8abf-d68f40c0a645"),
                             Code = "IS",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8939),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(923),
                             Name = "Iceland",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8940)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(923)
                         },
                         new
                         {
-                            Id = new Guid("7a319f2b-495d-489e-9798-eefd435acc28"),
+                            Id = new Guid("43db4e9c-52aa-43e6-8f7d-58a8f66d7ddc"),
                             Code = "GB",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8944),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(925),
                             Name = "United Kingdom",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8944)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(925)
                         },
                         new
                         {
-                            Id = new Guid("dd12dd09-57b5-42d1-9a78-dd60b383266d"),
+                            Id = new Guid("283e2a17-548f-4c2d-bdb9-6fbb749476c6"),
                             Code = "IE",
                             CountryRegionCode = "EU",
-                            CreatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8946),
+                            CreatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(928),
                             Name = "Ireland",
-                            UpdatedAt = new DateTime(2024, 7, 17, 12, 19, 1, 205, DateTimeKind.Utc).AddTicks(8947)
+                            UpdatedAt = new DateTime(2024, 8, 1, 7, 49, 54, 276, DateTimeKind.Utc).AddTicks(928)
                         });
                 });
 

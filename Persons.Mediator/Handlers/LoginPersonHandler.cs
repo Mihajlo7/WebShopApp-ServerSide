@@ -42,7 +42,9 @@ namespace Persons.Mediator.Handlers
                 var passwordPerson =
                     await _unitOfWork.GetRepository<Password>().GetSingleOrDefaultAsync(password =>
                     password.PersonId == foundedPerson.Id);
-                if(passwordPerson != null && PasswordMaker.VerifyPassword(request.loginPerson.Password, passwordPerson.PasswordHash, Encoding.UTF8.GetBytes(passwordPerson.PasswordSalt)))
+                var salt = passwordPerson.PasswordSalt;
+                var hash = passwordPerson.PasswordHash;
+                if(PasswordMaker.VerifyPassword(request.loginPerson.Password, passwordPerson.PasswordHash, Convert.FromBase64String(passwordPerson.PasswordSalt)))
                 {
                     found = true;
                 }
@@ -54,7 +56,7 @@ namespace Persons.Mediator.Handlers
             }
             else
             {
-                return new LoginResponseDTO { Success = false, Message = "Email and password is incorrect" };
+                return new LoginResponseDTO { Success = false, Message = "Email or password is incorrect" };
             }
         }
     }

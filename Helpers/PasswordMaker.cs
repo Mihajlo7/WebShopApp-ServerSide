@@ -26,7 +26,7 @@ namespace Helpers
 
         public static bool VerifyPassword(string password,string hash,byte[] salt) 
         {
-            var hashToCompare=Rfc2898DeriveBytes.Pbkdf2(password, salt,iterations,hashAlgorithm,keySize);
+            var hashToCompare=Rfc2898DeriveBytes.Pbkdf2(Encoding.UTF8.GetBytes(password), salt,iterations,hashAlgorithm,keySize);
             return CryptographicOperations.FixedTimeEquals(hashToCompare,Convert.FromHexString(hash));
         }
     }
