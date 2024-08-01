@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using ExceptionModel;
+using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -46,7 +46,9 @@ namespace GlobalExceptionHandlerNew
                 errorResponse.StatusCode = StatusCodes.Status422UnprocessableEntity;
                 errorResponse.ErrorCode = "VAL-00X1";
                 errorResponse.Message = "One or more validation errors occurred";
-                errorResponse.Errors = (IReadOnlyDictionary<string, string[]>)validationException.Data;
+                errorResponse.Errors = validationException.Errors
+                    .GroupBy(e=>e.PropertyName)
+                    .ToDictionary(g=>g.Key, g=>g.Select(e=>e.ErrorMessage).ToArray());
             }else if (exception is BaseException baseException)
             {
                errorResponse.Title = baseException.Title;
