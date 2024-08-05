@@ -6,12 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GenericEntity\GenericEntity.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    
-  </ItemGroup>
-
 </Project>
