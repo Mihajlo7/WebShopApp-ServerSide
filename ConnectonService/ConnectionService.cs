@@ -24,5 +24,11 @@ namespace ConnectonService
             personsDatabase = _configuration["Modules:Persons:SqlServer"];
             return personsDatabase;
         }
+
+        public string GetProductsConnection()
+        {
+            productsDatabase = _configuration["Modules:Products:SqlServer"];
+            return productsDatabase;
+        }
     }
 }

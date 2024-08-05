@@ -20,6 +20,7 @@
     <ProjectReference Include="..\GlobalExceptionHandlerNew\GlobalExceptionHandlerNew.csproj" />
     <ProjectReference Include="..\Persons.Infrastructure\Persons.Infrastructure.csproj" />
     <ProjectReference Include="..\Persons.Service\Persons.Service.csproj" />
+    <ProjectReference Include="..\Products.Infrastructure\Products.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
